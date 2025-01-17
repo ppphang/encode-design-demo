@@ -1,4 +1,4 @@
-// .github/workflow/storybook-github-pages.yml
+// .github/workflows/storybook-github-pages.yml
 
 # Workflow name
 name: Build and Publish Storybook to GitHub Pages
