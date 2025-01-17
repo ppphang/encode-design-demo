@@ -1,5 +1,5 @@
 {
-  "repositoryUrl": "https://github.com/stiekel/encode-design.git",
+  "repositoryUrl": "https://github.com/ppphang/encode-design-demo.git",
   "branches": ["main"],
   "plugins": [
     "@semantic-release/commit-analyzer",
