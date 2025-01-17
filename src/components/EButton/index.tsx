@@ -1,5 +1,5 @@
 import { IEButtonProps } from "./interface";
-import classNames from "classNames";
+import classNames from "classnames";
 import "./index.css";
 const Button = ({
   disabled = false,
