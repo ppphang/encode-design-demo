@@ -30,4 +30,5 @@ jobs:
         with:
           path: storybook-static
           checkout: false
-
+          install_command: pnpm install --no-frozen-lockfile  # 使用 pnpm
+          build_command: pnpm run build-storybook  # 使用 pnpm
