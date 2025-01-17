@@ -17,6 +17,9 @@ importers:
       D:
         specifier: ^1.0.0
         version: 1.0.0
+      classnames:
+        specifier: ^2.5.1
+        version: 2.5.1
       lint-staged:
         specifier: ^15.4.0
         version: 15.4.0
@@ -54,6 +57,9 @@ importers:
       '@storybook/test':
         specifier: 8.5.0
         version: 8.5.0(storybook@8.5.0(prettier@3.4.2))
+      '@types/css-modules':
+        specifier: ^1.0.5
+        version: 1.0.5
       '@types/react':
         specifier: ^18.3.18
         version: 18.3.18
@@ -872,6 +878,9 @@ packages:
   '@types/conventional-commits-parser@5.0.1':
     resolution: {integrity: sha512-7uz5EHdzz2TqoMfV7ee61Egf5y6NkcO4FB/1iCCQnbeiI1F3xzv3vK5dBCXUCLQgGYS+mUeigK1iKQzvED+QnQ==}
 
+  '@types/css-modules@1.0.5':
+    resolution: {integrity: sha512-oeKafs/df9lwOvtfiXVliZsocFVOexK9PZtLQWuPeuVCFR7jwiqlg60lu80JTe5NFNtH3tnV6Fs/ySR8BUPHAw==}
+
   '@types/doctrine@0.0.9':
     resolution: {integrity: sha512-eOIHzCUSH7SMfonMG1LsC2f8vxBFtho6NGBznK41R84YzPuvSBzrhEps33IsQiOW9+VL6NQ9DbjQJznk/S4uRA==}
 
@@ -1177,6 +1186,9 @@ packages:
         optional: true
       '@chromatic-com/playwright':
         optional: true
+
+  classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
   cli-cursor@5.0.0:
     resolution: {integrity: sha512-aCj4O5wKyszjMmDT4tZj93kxyydN/K5zPWSCe6/0AV/AA1pqe5ZBIw0a2ZfPQV7lL5/yb5HsUreJ6UFAF1tEQw==}
@@ -3312,6 +3324,8 @@ snapshots:
     dependencies:
       '@types/node': 22.10.7
 
+  '@types/css-modules@1.0.5': {}
+
   '@types/doctrine@0.0.9': {}
 
   '@types/estree@1.0.6': {}
@@ -3660,6 +3674,8 @@ snapshots:
   check-error@2.1.1: {}
 
   chromatic@11.24.0: {}
+
+  classnames@2.5.1: {}
 
   cli-cursor@5.0.0:
     dependencies:

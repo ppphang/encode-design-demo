@@ -1,0 +1,18 @@
+.btn-default{
+    background-color: #fff;
+}
+.btn-small{
+    padding:4px;
+    font-size: 12px;
+    height: 20px;
+}
+.btn-medium{
+    padding:10px;
+    font-size: 14px;
+    height: 30px;
+}
+.btn-large{
+    padding:12px;
+    font-size: 16px;
+    height: 40px;
+}
