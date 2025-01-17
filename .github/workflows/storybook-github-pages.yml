@@ -1,32 +1,61 @@
-name: Build and Publish Storybook to GitHub Pages
+# name: Build and Publish Storybook to GitHub Pages
 
+# on:
+#   push:
+#     branches:
+#       - 'main'
+#   workflow_dispatch:
+
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: '18'
+#       - run: npm i -g pnpm
+#       - run: pnpm install --no-frozen-lockfile
+#       - run: pnpm run build-storybook
+#       - name: List files
+#         run: ls -R storybook-static
+#       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+#         with:
+#           path: storybook-static
+#           checkout: false
+
+name: Deploy Storybook
 on:
   push:
     branches:
       - 'main'
-  workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
         with:
-          fetch-depth: 0
+          run_install: false
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-      - run: npm i -g pnpm
-      - run: pnpm install --no-frozen-lockfile
-      - run: pnpm run build-storybook
-      - name: List files
-        run: ls -R storybook-static
+          node-version: '20.13.1'
+      #👇 Add Storybook build and deploy to GitHub Pages as a step in the workflow
       - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
         with:
+          install_command: pnpm install --frozen-lockfile
+          build_command: pnpm run build-storybook
           path: storybook-static
           checkout: false
