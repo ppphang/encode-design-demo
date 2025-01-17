@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '18'
       - run: npm i -g pnpm
-      - run: pnpm install
+      - run: pnpm install --no-frozen-lockfile
       - run: pnpm run build-storybook
       - name: List files
         run: ls -R storybook-static
