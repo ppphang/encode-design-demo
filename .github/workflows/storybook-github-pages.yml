@@ -22,6 +22,7 @@ jobs:
         with:
           node-version: '18'
       - run: npm i -g pnpm
+      - run: npm config set registry https://registry.npmmirror.com
       - run: pnpm install --no-frozen-lockfile
       - run: pnpm run build-storybook
       - name: List files
