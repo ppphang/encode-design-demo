@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ppphang/encode-design-demo/compare/v1.0.0...v1.1.0) (2025-01-22)
+
+
+### Features
+
+* add EButton style ([7b8d1a5](https://github.com/ppphang/encode-design-demo/commit/7b8d1a55bbc9b0199468cea0e4aa1d1511f46d66))
+
 # 1.0.0 (2025-01-17)
 
 
