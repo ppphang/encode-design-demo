@@ -1,18 +1,36 @@
-.btn-default{
-    background-color: #fff;
+.btn-default {
+  background-color: #2c4cdb;
+  border: 1px solid #f1efef;
+  border-radius: 4px;
+  color: #ebe9e9;
+  padding: 1px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
-.btn-small{
-    padding:4px;
-    font-size: 12px;
-    height: 20px;
+.btn-default:hover {
+  background-color: #5d74db;
+  color: #ebe9e9;
 }
-.btn-medium{
-    padding:10px;
-    font-size: 14px;
-    height: 30px;
+
+.btn-default:active {
+  background-color: #2c4cdb;
+  color: #ffffff;
 }
-.btn-large{
-    padding:12px;
-    font-size: 16px;
-    height: 40px;
+.btn-small {
+  padding: 0 11px;
+  font-size: 12px;
+  height: 24px;
+}
+.btn-medium {
+  padding: 0 15px;
+  font-size: 14px;
+  height: 32px;
+}
+.btn-large {
+  padding: 12px;
+  font-size: 16px;
+  height: 40px;
 }
