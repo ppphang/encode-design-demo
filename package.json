@@ -1,6 +1,6 @@
 {
   "name": "encode-design-demo",
-  "version": "1.6.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
